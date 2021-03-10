@@ -1,0 +1,108 @@
+/* Все mobile стили. Вход ниже 768px */
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.title {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.sub-title {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.text {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.button {
+    cursor: pointer;
+    width: 100%;
+    z-index: 3;
+    outline: none;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid transparent;
+    background-color: #ff7800;
+    transition: 0.1s;
+}
+
+.button:hover {
+    color: #ff7800;
+    background-color: #fff;
+    border: 1px solid #ff7800;
+}
+
+.button:active {
+    color: #fff;
+    background-color: #ff7800;
+}
+
+.button-small {
+    font-size: 18px;
+    height: 100%;
+}
+
+.button-large {
+    font-size: 26px;
+    min-height: 50px;
+}
+
+.input {
+    padding: 3px;
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    box-shadow: 2px 4px 19px -3px rgba(34, 60, 80, 0.2);
+    color: #ff7800;
+}
+
+.input-lb {
+    width: 100%;
+}
+
+.input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.1s ease; color: #0053b9;}
+.input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.1s ease;}
+
+/* @media  запросы. От 768px и выше. (Планшет) */
+@media (min-width: 768px) {
+    .wrapper {
+        padding: 35px;
+    }
+
+    .title {
+        font-size: 48px;
+    }
+
+    .sub-title {
+        font-size: 34px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+
+    .button-small {
+        height: 50%;
+    }
+
+    .button-large {
+        min-height: 70px;
+    }
+}
