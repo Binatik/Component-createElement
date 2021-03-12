@@ -10,7 +10,7 @@ const dataContents = [
         },
         content: [{
             id: 1,
-            type: 'label',
+            type: 'panel',
             props: {
                 caption: 'test',
                 visible: false

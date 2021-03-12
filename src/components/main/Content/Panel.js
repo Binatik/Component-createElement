@@ -4,9 +4,10 @@ import React from 'react';
 
 // Component
 
-function Panel({ props, children}) {
+function Panel({ props, dataCh}) {
+
     const { width, height, visible } = props;
-    const { el, checkContent } = children;
+    const { content, checkContent } = dataCh;
 
     return (
             visible ?
@@ -19,7 +20,7 @@ function Panel({ props, children}) {
                     }
                 }>
                 {
-                    Array.isArray(el.content) ? el.content.map((ch) => {
+                    Array.isArray(content) ? content.map((ch) => {
                         return checkContent(ch);
                     }) : null
                 }

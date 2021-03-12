@@ -1,5 +1,5 @@
 // =================================================
-import React, {useRef, useReducer } from 'react';
+import React, { useRef, useReducer } from 'react';
 import Body from "../Body";
 import Input from "./Input";
 import inputData from "../data/inputData";
@@ -24,11 +24,17 @@ function Main() {
     const inputs = useRef([]);
 
     function checkContent(el) {
+        const { content } = el
         if (el.type === 'panel'){
             return <Panel
                     key={el.id}
                     props={el.props}
-                    children={ {el, checkContent} }
+                    dataCh={
+                        {
+                            content,
+                            checkContent
+                        }
+                    }
             />
         }
 
@@ -39,7 +45,7 @@ function Main() {
             />
         }
 
-        if (el.type === 'button'){
+        if (el.type === 'button') {
             return <Button
                 key={el.id}
                 propsClass={'content__button button button-large'}
@@ -51,7 +57,7 @@ function Main() {
 
     function createContent() {
         const value = {
-            way: inputs.current[0].value,
+            path: inputs.current[0].value,
             newData: inputs.current[1].value
         }
 
@@ -76,7 +82,7 @@ function Main() {
                     <Button
                         propsClass={'form__button button button-small'}
                         text={'Применить'}
-                        func={ createContent }
+                        func={createContent}
                     />
                 </form>
             </Body>
