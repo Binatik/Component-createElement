@@ -1,10 +1,6 @@
 # Component-createElement
  
-Enter the path in input.  
-
-Creating a new value for the existing type 
-
-You can enter different types of data 
+ <a name="abcd">еу</a>
 
 ### Types 
 ```sh
@@ -83,5 +79,8 @@ You can enter different types of data
             }]
         }]
     },
- ``` 
+ ```  
+ 
+ 
+ ###
  
