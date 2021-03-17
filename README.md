@@ -1,11 +1,17 @@
-# Component-createElement 
+# Component-createElement  
+
+## Навигация 
 
 1. [Обновления](#abcd) 
 2. [Возможности](#abcd) 
 3. [Инструкция](#abcd)  
-⋅⋅⋅* [Инструкция2](#abcd)  
+   * [Типы](#abcd)   
+   * [Настройка](#abcd)   
+   * [Пример](#abcd)   
+
+  
+## 
  
- <a name="abcd">еу</a>
 
 ### Types 
 ```sh
